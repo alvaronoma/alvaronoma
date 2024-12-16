@@ -1,0 +1,239 @@
+/* Estilos generales */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  text-align: center;
+  padding: 1.25rem;
+  text-transform: uppercase;
+  text-shadow: 0.0625rem 0.0625rem 0.125rem #000;
+}
+
+/* Nav: Flexbox Layout */
+nav {
+  background-color: #3700b3;
+  padding: 0.625rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.625rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #6200ea;
+}
+
+/* Main Content: Grid Layout */
+main {
+  padding: 1.5rem;
+}
+
+/* Secciones en main */
+#asignaturas {
+  padding: 1.25rem;
+}
+
+#formu {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Galería: Flexbox Layout */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.row img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #6200ea;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ga {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #6200ea;
+}
+
+/* Footer */
+footer {
+  background-color: #3100ea;
+  color: white;
+  text-align: center;
+  padding: 0.625rem;
+  margin-top: 1.25rem;
+}
+
+#foto {
+  max-width: 9.375rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 0.625rem 0;
+  color: black;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Tabla */
+table.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  background-color: white;
+  font-size: 0.875rem;
+}
+
+table.tabla th,
+table.tabla td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+table.tabla th {
+  background-color: #d3d3d3;
+  font-weight: bold;
+}
+
+table.tabla td {
+  vertical-align: top;
+}
+
+/* Formulario: Flexbox en Fieldsets */
+fieldset {
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #6200ea;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Video */
+
+#video-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 2rem;
+}
+
+#video-container h2 {
+  font-size: 1.5rem;
+  color: #6200ea;
+  flex: 1 1 300px;
+  margin: 0;
+}
+
+video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #6200ea;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1rem;
+  }
+
+  nav a {
+    padding: 0.3rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
