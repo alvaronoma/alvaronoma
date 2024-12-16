@@ -147,6 +147,12 @@ legend {
   color: #6200ea;
 }
 
+textarea {
+  width: 100%; 
+  max-width: 100%;
+  resize: vertical;
+}
+
 label {
   display: block;
   margin-top: 0.5rem;
