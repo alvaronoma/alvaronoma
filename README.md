@@ -1,2 +1,2 @@
 ## Alvaro 👋
-En este repositorio estará el trabajo del Salva de las Iteraciones.
+En este repositorio estará mi trabajo de las Iteraciones que pide el Salva.
